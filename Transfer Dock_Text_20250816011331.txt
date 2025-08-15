@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="title">شرم سيتي ترافل | رحلات وتوصيل بأقل الأسعار</title>
+  <meta name="description" content="حجوزات رحلات شرم الشيخ، مواصلات المطار والفنادق، جولات بحرية وصحراوية، خدمة عملاء 24/7." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header class="glass">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <i class="fa-solid fa-umbrella-beach"></i>
+        <span data-i18n="brand">شرم سيتي-ترافل</span>
+      </a>
+
+      <nav>
+        <a href="#tours" data-i18n="nav_tours">الرحلات</a>
+        <a href="#transfer" data-i18n="nav_transfer">التوصيل</a>
+        <a href="#about" data-i18n="nav_about">عنّا</a>
+        <a href="#contact" data-i18n="nav_contact">تواصل</a>
+      </nav>
+
+      <div class="actions">
+        <button id="langToggle" class="btn secondary" aria-label="switch language">
+          <i class="fa-solid fa-language"></i> <span id="langLabel">EN</span>
+        </button>
+        <a class="btn primary" href="#booking" data-i18n="book_now">احجز الآن</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <img class="hero-bg" alt="Sharm El-Sheikh beach"
+      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop" />
+    <div class="container hero-content">
+      <h1 data-i18n="hero_title">عيش أجمل تجربة في شرم الشيخ</h1>
+      <p data-i18n="hero_sub">رحلات بحرية وصحراوية، واستقبال وتوصيل بأقل الأسعار. خدمة 24/7.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#tours" data-i18n="see_tours">شوف الرحلات</a>
+        <a class="btn ghost" href="#transfer" data-i18n="see_transfer">خدمات التوصيل</a>
+      </div>
+      <div class="badge glass"><i class="fa-solid fa-star"></i> 4.9/5 (+2,300 reviews)</div>
+    </div>
+  </section>
+
+  <!-- Tours -->
+  <section id="tours" class="section container">
+    <h2 data-i18n="tours_title">أفضل الرحلات</h2>
+    <p class="muted" data-i18n="tours_sub">أسعار تنافسية تشمل الانتقالات والتأمين ودليل مرخّص.</p>
+
+    <div class="grid cards">
+      <!-- Boat Trip -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-body">
+          <h3 data-i18n="tour_boat">رحلة يخت: محمية رأس محمد + سنوركل</h3>
+          <ul class="features">
+            <li><i class="fa-solid fa-clock"></i> <span data-i18n="hours8">8 ساعات</span></li>
+            <li><i class="fa-solid fa-utensils"></i> <span data-i18n="lunch_included">غداء ومشروبات</span></li>
+            <li><i class="fa-solid fa-user-shield"></i> <span data-i18n="insured">تأمين شامل</span></li>
+          </ul>
+          <div class="price-row">
+            <div class="price"><span data-i18n="from">ابتداءً من</span> <strong>450 EGP</strong></div>
+            <a class="btn primary" href="#booking" data-i18n="book">احجز</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Desert Safari -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-body">
+          <h3 data-i18n="tour_safari">سفاري بيتش باجي + عشاء بدوي</h3>
+          <ul class="features">
+            <li><i class="fa-solid fa-clock"></i> <span data-i18n="hours4">4 ساعات</span></li>
+            <li><i class="fa-solid fa-motorcycle"></i> ATV + Camel</li>
+            <li><i class="fa-solid fa-moon"></i> <span data-i18n="show">عرض فلكلور</span></li>
+          </ul>
+          <div class="price-row">
+            <div class="price"><span data-i18n="from">ابتداءً من</span> <strong>350 EGP</strong></div>
+            <a class="btn primary" href="#booking" data-i18n="book">احجز</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Submarine -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1544551763-8fde90f0b7f7?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-body">
+          <h3 data-i18n="tour_submarine">غواصة سيمي سبمارين: شعاب مرجانية</h3>
+          <ul class="features">
+            <li><i class="fa-solid fa-clock"></i> <span data-i18n="hours2">ساعتان</span></li>
+            <li><i class="fa-solid fa-ship"></i> AC Boat</li>
+            <li><i class="fa-solid fa-children"></i> <span data-i18n="family">مناسبة للعائلة</span></li>
+          </ul>
+          <div class="price-row">
+            <div class="price"><span data-i18n="from">ابتداءً من</span> <strong>300 EGP</strong></div>
+            <a class="btn primary" href="#booking" data-i18n="book">احجز</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Transfer -->
+  <section id="transfer" class="section container">
+    <h2 data-i18n="transfer_title">التوصيل والمواصلات</h2>
+    <p class="muted" data-i18n="transfer_sub">استقبال مطار، تنقّل فنادق، ورحلات خاصة بسيارات حديثة وسواقين محترفين.</p>
+
+    <div class="grid prices">
+      <div class="price-card glass">
+        <h3 data-i18n="airport">استقبال مطار شرم</h3>
+        <p><i class="fa-solid fa-taxi"></i> <span data-i18n="sedan">سيدان (1-3 ركاب)</span></p>
+        <div class="price"><strong>250 EGP</strong></div>
+      </div>
+      <div class="price-card glass">
+        <h3 data-i18n="hotel">تنقلات الفنادق</h3>
+        <p><i class="fa-solid fa-shuttle-van"></i> <span data-i18n="van">فان (حتى 7 ركاب)</span></p>
+        <div class="price"><strong>350 EGP</strong></div>
+      </div>
+      <div class="price-card glass">
+        <h3 data-i18n="private">رحلة خاصة نصف يوم</h3>
+        <p><i class="fa-solid fa-car"></i> <span data-i18n="private_desc">سيارة خاصة + سائق</span></p>
+        <div class="price"><strong>900 EGP</strong></div>
+      </div>
+    </div>
+
+    <div class="note" data-i18n="transfer_note">
+      الأسعار شاملة الانتظار المعقول + كرسي طفل مجاني عند الطلب.
+    </div>
+  </section>
+
+  <!-- About / Highlights -->
+  <section id="about" class="section container">
+    <div class="about">
+      <div>
+        <h2 data-i18n="about_title">ليه تختارنا؟</h2>
+        <ul class="ticks">
+          <li><i class="fa-solid fa-shield-heart"></i> <span data-i18n="licensed">دليلين مرخّصين وتأمين كامل</span></li>
+          <li><i class="fa-solid fa-money-bill-1-wave"></i> <span data-i18n="best_price">أقل سعر مضمون</span></li>
+          <li><i class="fa-solid fa-headset"></i> <span data-i18n="support">دعم واتساب 24/7</span></li>
+          <li><i class="fa-solid fa-star"></i> 4.9/5 <span data-i18n="reviews">تقييمات ممتازة</span></li>
+        </ul>
+      </div>
+      <img class="about-img" alt=""
+        src="https://images.unsplash.com/photo-1523419409543-a419b05f2c2a?q=80&w=1200&auto=format&fit=crop" />
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="section container">
+    <h2 data-i18n="booking_title">احجز رحلتك</h2>
+    <form class="card form" id="bookingForm">
+      <div class="row">
+        <label data-i18n="name">الاسم الكامل</label>
+        <input required name="name" placeholder="Your name" />
+      </div>
+      <div class="row">
+        <label data-i18n="phone">رقم الواتساب</label>
+        <input required name="phone" placeholder="+20…" />
+      </div>
+      <div class="row">
+        <label data-i18n="service">الخدمة</label>
+        <select name="service">
+          <option value="boat" data-i18n="tour_boat">رحلة يخت</option>
+          <option value="safari" data-i18n="tour_safari">سفاري</option>
+          <option value="sub" data-i18n="tour_submarine">غواصة</option>
+          <option value="transfer" data-i18n="transfer_title">توصيل</option>
+        </select>
+      </div>
+      <div class="row">
+        <label data-i18n="date">التاريخ</label>
+        <input type="date" name="date" required />
+      </div>
+      <div class="row">
+        <label data-i18n="notes">ملاحظات</label>
+        <textarea name="notes" rows="3" placeholder="Hotel / Flight / kids seat…"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">
+          <i class="fa-brands fa-whatsapp"></i> <span data-i18n="send_whatsapp">إرسال على واتساب</span>
+        </button>
+        <span class="muted" data-i18n="instant_reply">نردّ عليك فورًا خلال دقائق.</span>
+      </div>
+    </form>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand big"><i class="fa-solid fa-umbrella-beach"></i> <span data-i18n="brand">شرم سيتي-ترافل</span></div>
+        <p class="muted" data-i18n="footer_about">شريكك المثالي لرحلة لا تُنسى في شرم الشيخ.</p>
+      </div>
+      <div>
+        <h4 data-i18n="contact_title">تواصل</h4>
+        <ul class="contact">
+          <li><i class="fa-brands fa-whatsapp"></i> +20 100-000-0000</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@sharmcity.travel</li>
+          <li><i class="fa-solid fa-location-dot"></i> Sharm El-Sheikh</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="quick_links">روابط</h4>
+        <ul class="links">
+          <li><a href="#tours" data-i18n="nav_tours">الرحلات</a></li>
+          <li><a href="#transfer" data-i18n="nav_transfer">التوصيل</a></li>
+          <li><a href="#booking" data-i18n="book_now">احجز الآن</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> SharmCity-Travel. All rights reserved.</div>
+  </footer>
+
+  <a class="whatsapp-fab" target="_blank"
+     href="https://wa.me/201000000000"
+     aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
