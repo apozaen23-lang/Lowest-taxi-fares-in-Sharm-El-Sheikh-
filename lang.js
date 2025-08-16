@@ -1,6 +1,91 @@
 // i18n dictionary (Arabic default, English alt)
 const dict = {
   ar: {
+    title: "شرم سيتي ترافل | رحلات وتوصيل بأقل الأسعار",
+    brand: "شرم سيتي ترافل",
+    nav_tours: "الرحلات",
+    nav_transfer: "التوصيل",
+    nav_about: "عنا",
+    nav_contact: "تواصل",
+    book_now: "احجز الآن",
+    hero_title: "عِش أجمل تجربة في شرم الشيخ",
+    hero_sub: "رحلات بحرية وصحراوية، واستقبال وتوصيل بأقل الأسعار، خدمة 24/7.",
+    see_tours: "شوف الرحلات",
+    see_transfer: "خدمات التوصيل",
+    tours_title: "أفضل الرحلات",
+    tours_sub: "أسعار تنافسية تشمل الانتقالات والتأمين ودليل مرخص.",
+    tour_boat: "رحلة يخت، محمية رأس محمد وجزيرة تيران",
+    hours8: "8 ساعات",
+    lunch_included: "غداء ومشروبات",
+    insured: "تأمين شامل",
+    book: "احجز",
+    tour_safari: "سفاري بيتش باجي + عشاء بدوي",
+    hours4: "4 ساعات",
+    show: "عرض فلكلور",
+    tour_submarine: "غواصة سي سبايدر، مشاهدة شعاب مرجانية",
+    hours2: "ساعتان",
+    lang_switch: "English"
+  },
+  en: {
+    title: "Sharm City Travel | Best Tours & Transfers",
+    brand: "Sharm City Travel",
+    nav_tours: "Tours",
+    nav_transfer: "Transfers",
+    nav_about: "About",
+    nav_contact: "Contact",
+    book_now: "Book Now",
+    hero_title: "Live the Best Experience in Sharm El Sheikh",
+    hero_sub: "Sea & desert trips, pick-up & transfers at the best prices, 24/7 service.",
+    see_tours: "See Tours",
+    see_transfer: "Transfer Services",
+    tours_title: "Best Tours",
+    tours_sub: "Competitive prices including transfers, insurance & licensed guide.",
+    tour_boat: "Yacht Trip, Ras Mohamed Reserve & Tiran Island",
+    hours8: "8 Hours",
+    lunch_included: "Lunch & Drinks",
+    insured: "Full Insurance",
+    book: "Book",
+    tour_safari: "Beach Buggy Safari + Bedouin Dinner",
+    hours4: "4 Hours",
+    show: "Folklore Show",
+    tour_submarine: "Sea Spider Submarine, Coral Reef Viewing",
+    hours2: "2 Hours",
+    lang_switch: "العربية"
+  }
+};
+
+// Language switcher
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[lang] && dict[lang][key]) {
+      el.textContent = dict[lang][key];
+    }
+  });
+  document.documentElement.lang = lang;
+}
+
+// Load default language (Arabic)
+document.addEventListener("DOMContentLoaded", () => {
+  let lang = localStorage.getItem("lang") || "ar";
+  setLanguage(lang);
+
+  const langBtn = document.getElementById("lang-btn");
+  if (langBtn) {
+    langBtn.addEventListener("click", () => {
+      lang = lang === "ar" ? "en" : "ar";
+      localStorage.setItem("lang", lang);
+      setLanguage(lang);
+      langBtn.textContent = dict[lang].lang_switch;
+    });
+  }
+});
+// i18n dictionarel.textContenty (Arabic default, English alt)
+const dict = {
+
+
+  
+  ar: {
     title:"شرم سيتي ترافل | رحلات وتوصيل بأقل الأسعار",
     brand:"شرم سيتي-ترافل",
     nav_tours:"الرحلات",
